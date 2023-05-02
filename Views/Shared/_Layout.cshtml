@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="~/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/images/favicon/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotação | Progressiva Proteção Veicular</title>
+    <link rel="stylesheet" href="~/css/responsivo.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    
+    <header class="header-container">
+        <nav class="header-content">
+            <a href="https://www.aprogressiva.com.br/" target="_blank" rel="noopener"
+                alt="Progressiva Proteção Veicular">
+                <img class="header-content-logo" src="~/images/logo.png" alt="Progressiva Proteção Veicular" />
+            </a>
+        </nav>
+    </header>
+    
+    @RenderBody()
+
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-contato">
+                <div class="footer-redes">
+                    <a title="WhatsApp" href="https://api.whatsapp.com/send?phone=5541988311020" target="_blank"
+                        rel="noopener" alt="Progressiva Proteção veicular">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a title="Facebook" href="https://www.facebook.com/progressivaassistenciamutua/" target="_blank"
+                        rel="noopener" alt="Progressiva Proteção veicular">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a title="Instagram" href="https://www.linkedin.com/company/progressivaprotecaoveicular/"
+                        target="_blank" rel="noopener" alt="Progressiva Proteção veicular">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <a href="tel:4121051020" alt="Progressiva Proteção veicular">
+                    <i class="fa-solid fa-phone footer-contato-icon"></i> (41) 2105-1020
+                </a>
+                <a href="tel:08006771020" alt="Progressiva Proteção veicular">
+                    <i class="fa-solid fa-phone footer-contato-icon"></i> 0800-677-1020
+                </a>
+                <a href="mailto:contato@aprogressiva.com.br" alt="Progressiva Proteção veicular">
+                    <i class="fa-solid fa-envelope footer-contato-icon"></i> contato@aprogressiva.com.br
+                </a>
+            </div>
+            <div class="footer-diretos-reservados">
+                <p>Av. Mal. Floriano Peixoto, 3024 - Parolin, Curitiba - PR, 80220-000</p>
+                <p>&copy; 2023 - Progressiva Assitência Mútua - Todos os Direitos Reservados </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

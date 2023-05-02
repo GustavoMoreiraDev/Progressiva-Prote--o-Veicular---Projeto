@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background: #E0EAFC;
+    flex-direction: column;
+    justify-content: space-between;
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    max-width: 1800px;
+    padding: 30px 80px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-content-logo {
+    max-width: 180px;
+    height: auto;
+    width: 100%;
+}
+
+
+.main-container {
+    width: 100%;
+    display: flex;
+    max-width: 1800px;
+    padding: 40px 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-info-wrapper {
+    flex-direction: column;
+    color: #383737;
+    cursor: default;
+    display: flex;
+    gap: 15px;
+}
+
+.main-info-wrapper h1 {
+    font-size: 45px;
+    max-width: 22ch;
+}
+
+.main-info-wrapper p {
+    font-size: 30px;
+}
+
+.main-form-wrapper {
+    gap: 30px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    max-width: 650px;
+    padding: 10px 40px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 50px 5px 50px 5px;
+    box-shadow: 15px 15px 15px #00000067;
+}
+
+.main-form-wrapper h2 {
+
+    cursor: default;
+    font-weight: 600;
+    color: #00000088;
+    letter-spacing: 1px;
+}
+
+.main-form-wrapper form {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-form-inputs-flex {
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-form-wrapper form input,
+.main-form-wrapper form select {
+    background-color: #eee;
+    letter-spacing: 1px;
+    padding: 15px 25px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.select-form {
+    cursor: pointer;
+}
+
+.main-form-check-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-form-check-wrapper p {
+    color: #00000080;
+    font-weight: 600;
+    cursor: default;
+}
+.main-form-check-btns {
+    display: flex;
+    gap: 15px;    
+}
+.main-form-check-btns button {
+    padding: 10px 15px !important;
+}
+.option-btn {
+    background-color: #eee !important;
+    color: #000000a8 !important;
+    cursor: pointer !important;
+    padding: 10px !important;
+    border: none !important;
+}
+.option-btn.active {
+    background-color: rgba(12, 59, 189, 0.918) !important;
+    color: #fff !important;
+}
+
+.main-form-wrapper button {
+    background-color: rgba(12, 59, 189, 0.918);
+    letter-spacing: 1px;
+    padding: 15px 25px;
+    font-weight: bold;
+    transition: 0.3s;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+}
+
+.main-form-wrapper button:hover {
+    background-color: rgba(15, 50, 146, 0.918);
+    transition: 0.3s;
+    color: #ffffff;
+}
+
+.success-modal {
+    width: 100%;
+    display: none;
+    cursor: default;
+    padding: 50px 4%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.success-modal h3 {
+    padding: 10px 0;
+}
+.success-image {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 30px;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #353333;
+}
+.footer-content {
+    color: #ffffff;
+    width: 100%;
+    padding: 30px 80px;
+    max-width: 1800px;
+    justify-content: space-between;
+    display: flex;
+}
+.footer-contato {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-contato a {
+    color: #ffffffaf;
+    font-size: 14px;
+}
+.footer-contato-icon {
+    padding: 0 5px 0 0;
+}
+.footer-redes {
+    display: flex;
+    gap: 10px;
+}
+.footer-redes a {
+    font-size: 18px;
+}
+
+.footer-diretos-reservados {
+    gap: 5px;
+    display: flex;
+    text-align: right;
+    color: #ffffffaf;
+    flex-direction: column;
+}
+.footer-diretos-reservados p {
+    font-size: 14px;
+}

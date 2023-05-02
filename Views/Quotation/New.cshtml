@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Progressiva Força de Vendas" name="description" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Cotação | Progressiva Proteção Veicular</title>
+    <meta content="Progressiva" name="author" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="~/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/images/favicon/favicon-16x16.png">
+
+    <link href="~/css/responsivo.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/libs/custombox/custombox.min.css" rel="stylesheet">
+
+    <link href="~/libs/select2/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/libs/switchery/switchery.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body data-layout="horizontal">
+
+
+    @{ Layout = "_Layout"; }
+
+
+    <section id="wrapper" class="main-container">
+        <div class="main-info-wrapper">
+            <h1>
+                Proteção veicular completa para sua
+                tranquilidade <br /> no trânsito.
+            </h1>
+            <p>
+                Dirija sem preocupações!
+            </p>
+        </div>
+
+        <div class="main-form-wrapper" id="div-associated">
+            <h2>Dados para cotação</h2>
+            <form method="post" action="">
+                <input type="text" placeholder="Digite seu Nome" id="AssociatedName" required>
+                <input type="email" placeholder="Digite seu E-mail" id="AssociatedEmail" required>
+                <div class="main-form-inputs-flex">
+                    <input type="text" id="AssociatedPhoneNumber" placeholder="Digite seu Telefone" data-toggle="input-mask" data-mask-format="(00) 00000-0000" required>
+                    <select class="select-form" id="uf" title="selecione uma opção" required>
+                        <option value="" data-select2-id="3">Selecione a UF</option>
+                        <option value="1" data-select2-id="21">AC</option>
+                        <option value="2" data-select2-id="22">AL</option>
+                        <option value="3" data-select2-id="23">AP</option>
+                        <option value="4" data-select2-id="24">AM</option>
+                        <option value="5" data-select2-id="25">BA</option>
+                        <option value="6" data-select2-id="26">CE</option>
+                        <option value="7" data-select2-id="27">DF</option>
+                        <option value="8" data-select2-id="28">ES</option>
+                        <option value="9" data-select2-id="29">GO</option>
+                        <option value="10" data-select2-id="30">MA</option>
+                        <option value="11" data-select2-id="31">MT</option>
+                        <option value="12" data-select2-id="32">MS</option>
+                        <option value="13" data-select2-id="33">MG</option>
+                        <option value="14" data-select2-id="34">PA</option>
+                        <option value="15" data-select2-id="35">PB</option>
+                        <option value="16" data-select2-id="36">PR</option>
+                        <option value="17" data-select2-id="37">PE</option>
+                        <option value="18" data-select2-id="38">PI</option>
+                        <option value="19" data-select2-id="39">RJ</option>
+                        <option value="20" data-select2-id="40">RN</option>
+                        <option value="21" data-select2-id="41">RS</option>
+                        <option value="22" data-select2-id="42">RO</option>
+                        <option value="23" data-select2-id="43">RR</option>
+                        <option value="24" data-select2-id="44">SC</option>
+                        <option value="25" data-select2-id="45">SP</option>
+                        <option value="26" data-select2-id="46">SE</option>
+                        <option value="27" data-select2-id="47">TO</option>
+                    </select>
+                </div>
+                <button type="submit">
+                    Continuar
+                </button>
+            </form>
+        </div>
+
+
+        <div class="main-form-wrapper" id="div-vehicle" style="display:none">
+            <h2>Dados do Veículo</h2>
+            <form method="post" action="" id="form-veiculo">
+                <div class="main-form-inputs-flex">
+                    <input type="text" placeholder="Placa do Veículo" id="placaVeiculo" required>
+                    <select class="select-form" id="marca" title="selecione uma opção" required>
+                        <option value="" data-select2-id="6">Selecione a Marca</option>
+                        <option value="46" data-select2-id="1364">ACURA</option>
+                        <option value="215" data-select2-id="2694">CAMINHÃO PESADO R</option>
+                        <option value="253" data-select2-id="3219">BIASI</option>
+                        <option value="108" data-select2-id="3482">BMW</option>
+                        <option value="133" data-select2-id="3745">BRAVA</option>
+                        <option value="130" data-select2-id="4008">BUENO</option>
+                        <option value="127" data-select2-id="4271">CAGIVA</option>
+                        <option value="257" data-select2-id="4534">COMIL</option>
+                        <option value="90" data-select2-id="4797">FIBRAVAN</option>
+                        <option value="189" data-select2-id="5060">HARLEY-DAVIDSON</option>
+                        <option value="51" data-select2-id="5323">MARCOPOLO</option>
+                        <option value="164" data-select2-id="5586">MOTORINO</option>
+                        <option value="11" data-select2-id="5849">PUMA-ALFA</option>
+                        <option value="66" data-select2-id="6112">ROVER</option>
+                        <option value="26" data-select2-id="6375">TAC</option>
+                        <option value="3" data-select2-id="7162">AGRALE</option>
+                    </select>
+                </div>
+                <div class="main-form-inputs-flex">
+                    <select class="select-form" id="ano" title="selecione uma opção" required>
+                        <option value="" data-select2-id="5">Selecione o Ano</option>
+                        <option value="2005" data-select2-id="902">2005</option>
+                        <option value="2003" data-select2-id="921">2003</option>
+                        <option value="2002" data-select2-id="976">2002</option>
+                        <option value="2001" data-select2-id="1013">2001</option>
+                        <option value="2000" data-select2-id="1050">2000</option>
+                        <option value="1999" data-select2-id="1069">1992</option>
+                        <option value="1998" data-select2-id="1069">1992</option>
+                        <option value="1997" data-select2-id="1069">1992</option>
+                        <option value="1996" data-select2-id="1069">1992</option>
+                        <option value="1995" data-select2-id="1069">1992</option>
+                        <option value="1994" data-select2-id="1069">1992</option>
+                        <option value="1993" data-select2-id="1069">1992</option>
+                        <option value="1992" data-select2-id="1069">1992</option>
+                        <option value="1991" data-select2-id="1069">1992</option>
+                        <option value="1990" data-select2-id="1069">1992</option>
+                    </select>
+                    <select class="select-form" id="modelo" title="selecione uma opção" required>
+                        <option value="" data-select2-id="4">Selecione o Modelo</option>
+                        <option value="66" data-select2-id="6112">ROVER</option>
+                        <option value="26" data-select2-id="6375">TAC</option>
+                        <option value="3" data-select2-id="7162">AGRALE</option>
+                    </select>
+                </div>
+                <div class="main-form-check-wrapper">
+                    <p>Você é Motorista de Aplicativo?</p>
+                    <div class="main-form-check-btns">
+                        <button type="button" class="option-btn" id="m-sim">SIM</button>
+                        <button type="button" class="option-btn" id="m-nao">NÃO</button>
+                    </div>
+                </div>
+                <button type="submit">
+                    Continuar
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <div class="success-modal">
+        <img class="success-image" src="~/images/logo.png" alt="Progressiva Proteção Veicular" />
+        <h3>Cotação Enviada com sucesso!!</h3>
+        <p>Em breve entraremos em contato!!</p>
+    </div>
+    
+    <div class="account-pages my-5 pt-5"></div>
+
+    <script src="~/js/app.min.js"></script>
+    <script src="~/js/vendor.min.js"></script>
+    <script src="~/libs/select2/select2.min.js"></script>
+
+    <script src="~/scripts/quotation/formulario.js"></script>
+
+    <script src="~/libs/switchery/switchery.min.js"></script>
+    <script src="~/libs/sweetalert2/sweetalert2.min.js"></script>
+    <script src="~/libs/custombox/custombox.min.js" defer></script>
+    <script src="~/libs/jquery-mask-plugin/jquery.mask.min.js"></script>
+
+    <script src="~/scripts/quotation/new.js" asp-append-version="true" defer></script>
+
+
+    @if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+    {
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158802903-1" defer></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158802903-1');
+    </script>
+    }
+
+</body>
+</html>
